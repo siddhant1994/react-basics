@@ -1,0 +1,186 @@
+.loader {
+    /* display: none; */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.spinner {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+    -webkit-animation: sk-rotate 2.0s infinite linear;
+    animation: sk-rotate 2.0s infinite linear;
+}
+
+.dot1, .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #333;
+    border-radius: 100%;
+
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-rotate {
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes sk-rotate {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes sk-bounce {
+    0%, 100% {
+        -webkit-transform: scale(0.0)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bounce {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+
+
+.navigation_links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #333;*/
+}
+
+.navigation_links li {
+    float: right;
+    margin-top: 28px;
+}
+
+.pull-right{
+    float: right;
+}
+
+.navigation_links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navigation_links .active{
+    color: #777;
+}
+.navigation_links li a:hover {
+    color: #777;
+}
+.navigation {
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url("http://starsports.com/imgml/backgrounds/2015/header_bg.png");
+    /* max-width: 992px; */
+    margin: 0 auto;
+    position: relative;
+    background: #99cc00;
+}
+
+.navbar-header{
+    margin-right: 0;
+    margin-left: 0;
+    float: left;
+}
+
+.navbar-header > a span {
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: 145px center;
+    display: block;
+    cursor: pointer;
+}
+
+.navbar-header a span {
+    background-image: url('../images/SI_logo.png');
+    background-position: left 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 82px;
+    width: 94px;
+}
+
+.pull-down {
+    margin-top: 24px;
+}
+
+.brand{
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.container-fluid-nav{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navigation {
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url("http://starsports.com/imgml/backgrounds/2015/header_bg.png");
+    /*max-width: 992px;*/
+    margin: 0 auto;
+    position: relative;
+    background: #99cc00;
+}
+
+.navbar-header > a span {
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: 145px center;
+    display: block;
+    cursor: pointer;
+}
+
+.navbar-header a span {
+    /*background-image: url('../images/SI_logo.png');*/
+    background-position: left 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 82px;
+    width: 94px;
+}
